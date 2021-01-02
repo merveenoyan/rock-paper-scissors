@@ -40,7 +40,7 @@ def rps():
 					print(f"Winner is second user")
 					rounds = 6
 					return rounds, input_list
-				elif input_list[i+1] == Scissors:
+				elif input_list[i+1] == "Scissors":
 					print(f"Winner is first user")
 					rounds = 6
 					return rounds, input_list
@@ -57,7 +57,7 @@ def rps():
 						rps_2_person(rounds=rounds, input_list=[])
 						break
 
-					elif input_list[i+1] == Scissors:
+					elif input_list[i+1] == "Scissors":
 						print("Winner is second user")
 						rounds = 6
 						return rounds, input_list
@@ -67,13 +67,13 @@ def rps():
 						return rounds, input_list
 
 
-			elif input_list[i] == Scissors:
+			elif input_list[i] == "Scissors":
 					if input_list[i+1] == "Paper":
 						print(f"Winner is first user")
 						rounds = 6
 						break
 
-					elif input_list[i+1] == Scissors:
+					elif input_list[i+1] == "Scissors":
 						print("Tie, everyone will play again")
 						rounds = rounds + 1
 						rps_2_person(rounds=rounds, input_list=[])
@@ -104,7 +104,7 @@ def rps():
 				#second person plays paper
 				if input_list[i+1] == "Paper": 
 					#third person plays scissors, paper
-					if input_list[i+2] == Scissors:
+					if input_list[i+2] == "Scissors":
 						# There's a tie where everyone played a different move
 						print("Tie, everyone will play") 
 						rounds = rounds + 1
@@ -129,9 +129,9 @@ def rps():
 
 
 				# second person plays scissor
-				elif input_list[i+1] == Scissors: 
+				elif input_list[i+1] == "Scissors": 
 					#third person plays rock, scissors, paper
-					if input_list[i+2] == Scissors:
+					if input_list[i+2] == "Scissors":
 						print("First person wins")
 						rounds = 6
 						return rounds, input_list
@@ -153,7 +153,7 @@ def rps():
 				# second person plays rock
 				elif input_list[i+1] == "Rock": 
 					#third person plays scissors, paper
-					if input_list[i+2] == Scissors:
+					if input_list[i+2] == "Scissors":
 						print("User 1 and 2 will play again")
 						rounds = rounds + 1
 						rps_2_person(rounds=rounds, input_list=[])
@@ -176,7 +176,7 @@ def rps():
 				#second person plays paper
 				if input_list[i+1] == "Paper": 
 					#third person plays scissors, paper
-					if input_list[i+2] == Scissors:
+					if input_list[i+2] == "Scissors":
 						print("Player 2 wins")
 						rounds = 6
 						return rounds, input_list
@@ -195,9 +195,9 @@ def rps():
 
 
 				# second person plays scissor
-				elif input_list[i+1] == Scissors: 
+				elif input_list[i+1] == "Scissors": 
 					#third person plays rock, scissors, paper
-					if input_list[i+2] == Scissors:
+					if input_list[i+2] == "Scissors":
 						print("Tie, user 2 and 3 will play again")
 						rounds = rounds + 1
 						rps_2_person(rounds=rounds, input_list=[])
@@ -236,11 +236,11 @@ def rps():
 
 
 			#first person plays scissor	
-			if input_list[i] == Scissors:
+			if input_list[i] == "Scissors":
 				#second person plays paper
 				if input_list[i+1] == "Paper": 
 					#third person plays scissors, paper
-					if input_list[i+2] == Scissors:
+					if input_list[i+2] == "Scissors":
 						print("Tie, user 1 and 3 will play")
 						rounds = rounds + 1
 						rps_2_person()
@@ -259,9 +259,9 @@ def rps():
 
 
 				# second person plays scissor
-				elif input_list[i+1] == Scissors: 
+				elif input_list[i+1] == "Scissors": 
 					#third person plays rock, scissors, paper
-					if input_list[i+2] == Scissors:
+					if input_list[i+2] == "Scissors":
 						print("Tie, everyone will play again")
 						rounds = rounds + 1
 						rps_3_person(rounds=rounds, input_list=[])
@@ -282,7 +282,7 @@ def rps():
 				#second player plays rock
 				elif input_list[i+1] == "Rock": 
 					#third person plays rock, scissors, paper
-					if input_list[i+2] == Scissors:
+					if input_list[i+2] == "Scissors":
 						print("Player 2 wins")
 						rounds = 6
 						return rounds, input_list
