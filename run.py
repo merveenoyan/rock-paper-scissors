@@ -177,7 +177,7 @@ def rps():
 				if input_list[i+1] == "Paper": 
 					#third person plays scissors, paper
 					if input_list[i+2] == "Scissors":
-						print("Player 2 wins")
+						print("Player 3 wins")
 						rounds = 6
 						return rounds, input_list
 
