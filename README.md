@@ -3,3 +3,6 @@
 I just made this game as a last minute homework for a class, it's the first game I've ever made in Python. To run this, simply open a Terminal, clone into this repository and type "python run.py", and enter inputs (Rock, Paper, Scissors or Taylor Swift). If third user enters Taylor Swift it means there will only be two players. 
 Everything used is already built-in. 
 The code might be dirty, I added docstrings. There's probably more pythonic, clean and time/space efficient way of writing it, I'm open for feedbacks.
+
+To do:
+Directly return the user that won
