@@ -182,16 +182,16 @@ def rps():
 						return rounds, input_list
 
 					elif input_list[i+2] == "Paper":
-						print("Tie, user 2 and 3 will play")
-						rounds = rounds + 1
-						rps_2_person(rounds=rounds, input_list=[])
-						return rounds, input_list
-
-					elif input_list[i+2] == "Rock":
 						print("Tie, everyone will play")
 						rounds = rounds + 1
 						rps_3_person(rounds=rounds, input_list=[])
 						break
+
+					elif input_list[i+2] == "Rock":
+						print("Tie, user 1 and 2 will play")
+						rounds = rounds + 1
+						rps_2_person(rounds=rounds, input_list=[])
+						return rounds, input_list
 
 
 				# second person plays scissor
