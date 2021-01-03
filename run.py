@@ -218,7 +218,7 @@ def rps():
 				# second person plays rock
 				elif input_list[i+1] == "Rock": 
 					#third person plays scissors, paper
-					if input_list[i+2] == Scissors:
+					if input_list[i+2] == "Scissors":
 						print("Tie, everyone will play")
 						rounds = rounds + 1
 						rps_3_person(rounds=rounds, input_list=[])
