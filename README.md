@@ -6,4 +6,4 @@ The code might be dirty, I added docstrings. There's probably more pythonic, cle
 
 To do:
 Directly return the user that won
-SKDJKSJDS
+
